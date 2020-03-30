@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 50px 140px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+
+/*Navbar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #575656;
+    padding-bottom: 10px;
+    margin-bottom: 100px;
+}
+
+.navbar .nav-logo {
+    font-size: 25px;
+}
+.navbar .nav-links {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*Main*/
+.main {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    box-sizing: border-box;
+    /* filter: blur(10px); */
+}
+
+.main .data {
+    flex: 1;
+    text-align: center;
+    transform: translateY(50px);
+}
+
+.main .data h1 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.main .data .data-angka {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.main .data .data-angka h2 {
+    font-size: 40px;
+}
+
+.main .images {
+    flex: 1;
+}
+
+.main .images img {
+    width: 600px;
+    transform: translateY(-80px);
+}
+
+
+/*Footer*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .created ul {
+    list-style: none;
+}
+
+.footer .created ul li span {
+    color: #00ffffdc;
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+}
+
+.modal .main-modal {
+    position: relative;
+    width: 400px;
+    background-color: #fff;
+    margin: 100px auto;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 20px;
+    height: 400px;
+}
+
+.modal .main-modal .tittle {
+    margin: 30px 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000;
+    font-weight: normal;
+}
+
+.modal .main-modal p {
+    text-align: justify;
+}
+.modal .main-modal p:last-of-type {
+    margin-bottom: 30px;
+}
+
+.modal .main-modal span {
+    display: inline-block;
+    width: 65px;
+    height: 35px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 35px;
+    border-top-right-radius: 20px;
+    color: #000;
+    transition: .3s;
+    cursor: pointer;
+}
+.modal .main-modal span:hover {
+    background-color: red;
+    color: #fff;
+    box-shadow: -1px 1px 5px rgba(0,0,0,0.4);
+}
+
+
+@media screen and (max-width:1082px) {
+    .main .images img {
+        width: 450px;
+        transform: translateY(-40px);
+    }
+}
+@media screen and (max-width:988px) {
+    .main .images img {
+        width: 400px;
+        transform: translateY(-40px);
+    }
+}
+@media screen and (max-width:988px) {
+    body {
+        height: 100vh;
+        box-sizing: border-box;
+        padding-bottom: 0;
+    }
+    .navbar {
+        margin-bottom: 60px;
+    }
+    .main  {
+        display: block;
+    }
+    .main .data {
+        display: block;
+        text-align: center;
+        transform: translateY(0);
+    }
+    .main .data h1 {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .main .data .data-angka {
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+    }
+    .main .images img {
+        width: 400px;
+        transform: translateY(0);
+    }
+    .main .images {
+        display: block;
+        text-align: right;
+    }
+}
+
+@media screen and (max-width:671px) {
+    body {
+        padding: 40px 90px;
+    }
+    .footer {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width:564px) {
+    body {
+        padding: 30px 50px;
+    }
+}
+
+@media screen and (max-width:479px) {
+    .main .data h1 {
+        font-size: 29px;
+    }
+    .main .data .data-angka {
+
+        font-size: 17px;
+    }
+    .main .images img {
+        width: 100%;
+        transform: translateY(0);
+    }
+    .modal .main-modal {
+        width: 70%;
+        height: auto;
+        margin: 20px auto;
+    }
+    .modal .main-modal h1 {
+        font-size: 20px;
+    }
+    .modal .main-modal p {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .footer {
+        justify-content: space-around;
+    }
+    .main .data .data-angka {
+        width: 100%;
+    }
+}
